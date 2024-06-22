@@ -44,11 +44,11 @@ public class Message {
         this.text = text;
     }
 
-    public LocalDateTime getBirthday() {
+    public LocalDateTime getTime() {
         return time;
     }
 
-    public void setBirthday(LocalDateTime time) {
+    public void setTime(LocalDateTime time) {
         this.time = time;
     }
 
