@@ -59,5 +59,4 @@ public class MessageController {
         messages.removeIf(p -> p.getId() == id);
     }
 
-
 }
