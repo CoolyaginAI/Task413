@@ -1,23 +1,23 @@
 package com.example.Task413.dto;
 
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 public class Message {
 
     private int id;
     private String title;
     private String text;
-    LocalDate birthday;
+    LocalDateTime time;
 
     public Message() {
     }
 
     public Message(int id, String title,
-                   String text, LocalDate birthday) {
+                   String text, LocalDateTime time) {
         this.id = id;
         this.title = title;
         this.text = text;
-        this.birthday = birthday;
+        this.time = time;
     }
 
     public int getId() {
@@ -44,12 +44,12 @@ public class Message {
         this.text = text;
     }
 
-    public LocalDate getBirthday() {
-        return birthday;
+    public LocalDateTime getBirthday() {
+        return time;
     }
 
-    public void setBirthday(LocalDate birthday) {
-        this.birthday = birthday;
+    public void setBirthday(LocalDateTime time) {
+        this.time = time;
     }
 
 }

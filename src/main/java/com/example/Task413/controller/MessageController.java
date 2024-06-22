@@ -7,6 +7,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
@@ -17,10 +18,10 @@ import java.util.Optional;
 public class MessageController {
 
     private List<Message> messages = new ArrayList<>(Arrays.asList(
-            new Message(1, "Project 1", "Все выполнено", LocalDate.of(2024, 5,3)),
-            new Message(2, "Project 2", "Сделано", LocalDate.of(2024, 6,2)),
-            new Message(3, "Project 3", "Готово", LocalDate.of(2024, 3,8)),
-            new Message(4, "Project 4", "Закончено", LocalDate.of(2024, 2,5))
+            new Message(1, "Project 1", "Все выполнено", LocalDateTime.of(2024,5,3,15,14,23)),
+            new Message(2, "Project 2", "Сделано", LocalDateTime.of(2024,6,2,13,43,20)),
+            new Message(3, "Project 3", "Готово", LocalDateTime.of(2024,3,8,9,10,17)),
+            new Message(4, "Project 4", "Закончено", LocalDateTime.of(2024,2,5,17,59,59))
     ));
 
     @GetMapping("/message")
