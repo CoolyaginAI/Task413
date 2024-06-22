@@ -48,6 +48,7 @@ public class Message {
         return time;
     }
 
+
     public void setTime(LocalDateTime time) {
         this.time = time;
     }
